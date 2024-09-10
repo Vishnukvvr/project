@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #2d2f31;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .left-empty {
+    flex: 1;
+    display: none; 
+  }
+  
+  .right-widgets {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .widget {
+    background-color: #3b3d40;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .widget-tabs {
+    display: flex;
+    flex-direction: column;
+  }
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    border-radius: 10px;
+    height: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: rgb(141, 136, 136);
+    font-size: 1rem;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .tab:hover{
+    background-color: rgb(58, 56, 56);
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .tab-content {
+    margin-top: 10px;
+    padding: 10px;
+    background-color:#3b3d40;
+    border-radius: 5px;
+    height: 200px;
+    overflow: auto;
+    border: none;
+    scroll-behavior: smooth;
+  }
+::-webkit-scrollbar {
+    width: 10px;
+    height:5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(109, 106, 106); 
+    border-radius: 10px;
+  }
+  .widget-gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .gallery-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .galleryview{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 15px;
+  }
+  .add-image{
+    margin-right: 10px;
+    background-color: #2d2f31;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: #2d2f31 6px 2px 16px 0px, #2d2f31 -6px -2px 16px 0px;
+  }
+  
+  .arrow {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1rem;
+    box-shadow: #2d2f31 6px 2px 16px 0px, #2d2f31 -6px -2px 16px 0px;
+    
+  }
+  
+  .gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 250px; 
+  }
+  
+  .gallery-item {
+    width: 80px;
+    height: 80px;
+    background-color: #555;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+
+  @media (min-width: 768px) {
+    .left-empty {
+      display: block;
+    }
+  
+    .right-widgets {
+      flex: 1;
+    }
+  }

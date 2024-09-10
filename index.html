@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Widgets with Image Upload and Arrow Navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-empty"></div>
+    <div class="right-widgets">
+      <div class="widget widget-tabs">
+        <div class="tabs">
+            <a href="#about" class="tab">About Me</a>
+            <a href="#experience" class="tab">Experience</a>
+            <a href="#recommended" class="tab">Recommended</a>
+          </div>
+          <div class="tab-content">
+            <p id="about">
+              Hello👋, I am Vishnu.<br> I am a motivated and adaptable professional with expertise in web development and programming. Proficient in HTML 
+              and CSS for crafting and styling responsive websites, and experienced in Python for data analysis and machine learning tasks. Skilled in Java 
+              for software development and JavaScript for creating dynamic, interactive web applications. I am enthusiastic about applying my technical 
+              skills to tackle challenges and drive innovative solutions.
+            </p>
+      <br>
+            <p id="experience">
+              Data Science Master Virtual Internship, Eduskills - June 2024.<br>
+              Completed the Data Science Master Virtual Internship at Eduskills, gaining practical experience in data analysis, statistical modeling, 
+              and machine learning. Developed skills in Python, SQL, and data visualization. Worked on real-world projects to extract actionable insights 
+              from complex datasets. Proven ability to communicate technical findings effectively.  <br>
+              Python 101 for Data Science, CognitiveClass.ai - July 2024.<br>
+              Completed Python 101 for Data Science on CognitiveClass.ai, acquiring foundational skills in Python programming for data analysis. Gained 
+              proficiency in data manipulation, visualization, and basic statistical modeling.
+            </p>
+      <br>
+            <p id="recommended">
+              Data Science Master Virtual Internship, Eduskills - June 2024.
+              Completed the Data Science Master Virtual Internship at Eduskills, gaining practical experience in data analysis, statistical modeling, and machine learning. Developed skills in Python, SQL, and data visualization. Worked on real-world projects to extract actionable insights from complex datasets. Proven ability to communicate technical findings effectively.
+              Python 101 for Data Science, CognitiveClass.ai.
+            </p>
+          </div>
+        </div>
+      <div class="widget widget-gallery">
+        <div class="gallery-header">
+          <button class="galleryview">Gallery</button>
+          <input type="file" id="fileInput" accept="image/*" style="display:none">
+          <div>
+          <button class="add-image" id="addImageBtn">+ Add Image</button>
+          <button class="arrow" id="prevBtn">&lt;</button>
+          <button class="arrow" id="nextBtn">&gt;</button>
+        </div>
+        </div>
+        <div class="gallery-nav">
+          <div class="gallery" id="gallery"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
